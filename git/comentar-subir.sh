@@ -2,6 +2,8 @@
 # Subiendo y comentando a github
 echo "Subiendo a github"
 git add .
-git commit -m "$1"
+echo "escribe el mensaje"
+read mensaje
+git commit -m "$mensaje"
 git push
 echo "Subido a github"
